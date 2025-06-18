@@ -6,3 +6,7 @@ body {
   background-color: #dde6ed;
   min-height: 100vh;
 }
+
+main {
+  min-height: calc(100vh - 84px - 98.4px);
+}
