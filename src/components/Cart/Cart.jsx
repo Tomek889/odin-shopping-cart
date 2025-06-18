@@ -1,1 +1,3 @@
-export default function Cart() {}
+export default function Cart() {
+  return;
+}

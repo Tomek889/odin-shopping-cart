@@ -1,0 +1,23 @@
+.header {
+  background-color: #9db2bf;
+  padding: 30px 50px;
+}
+
+.navBar {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navBar li {
+  font-size: 1.6rem;
+}
+
+.navBar li a {
+  text-decoration: none;
+  color: #27374d;
+}
+
+.logo {
+  margin-right: auto;
+}

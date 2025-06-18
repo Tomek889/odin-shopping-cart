@@ -3,5 +3,6 @@
 }
 
 body {
-  background-color: #f7fbfc;
+  background-color: #dde6ed;
+  min-height: 100vh;
 }
