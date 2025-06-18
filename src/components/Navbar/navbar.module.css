@@ -1,12 +1,25 @@
 .header {
   background-color: #9db2bf;
   padding: 30px 50px;
+  position: relative;
+}
+
+.menuButton {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #27374d;
 }
 
 .navBar {
   list-style-type: none;
   display: flex;
   gap: 40px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  max-height: none;
 }
 
 .navBar li {
@@ -20,4 +33,53 @@
 
 .logo {
   margin-right: auto;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .menuButton {
+    display: block;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logoMobile {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #27374d;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navBar {
+    flex-direction: column;
+    background-color: #9db2bf;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 1000;
+    max-height: 0px;
+    padding: 0px;
+  }
+
+  .navBar.open {
+    padding: 16px 0px;
+    max-height: 1000px;
+  }
+
+  .navBar li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
 }
