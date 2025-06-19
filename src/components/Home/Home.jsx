@@ -13,7 +13,7 @@ export default function Home() {
           simple shopping experience.
         </p>
         <Link to="/items">
-          <button>Go Shopping! 🛒</button>
+          <button>Go shopping! 🛒</button>
         </Link>
       </div>
     </div>
