@@ -1,0 +1,12 @@
+.loader {
+  min-height: calc(100vh - 84px - 98.4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}

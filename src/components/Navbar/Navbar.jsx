@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./navbar.module.css";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ number }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClose = () => setMenuOpen(false);
@@ -38,7 +38,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/cart" onClick={handleClose}>
-              Cart
+              Cart ({number})
             </Link>
           </li>
         </ul>
