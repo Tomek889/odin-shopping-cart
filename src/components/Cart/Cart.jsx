@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, Link } from "react-router-dom";
 import styles from "./cart.module.css";
 
 export default function Items() {
@@ -23,7 +23,7 @@ export default function Items() {
     cart.forEach((item) => {
       total += item.number * item.price;
     });
-    return total;
+    return total.toFixed(2);
   }
 
   return cart.some((item) => item.number > 0) ? (
@@ -54,8 +54,10 @@ export default function Items() {
     </div>
   ) : (
     <div className={styles.emptyInfo}>
-        <h2>No items in cart.</h2>
+      <h2>No items in cart.</h2>
+      <Link to="/items">
         <button>Go shopping! 🛒</button>
+      </Link>
     </div>
   );
 }
