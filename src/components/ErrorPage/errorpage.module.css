@@ -1,0 +1,33 @@
+.errorWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.error {
+  text-align: center;
+  max-width: 840px;
+}
+
+.error h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #27374d;
+}
+
+.error p {
+  margin-bottom: 1rem;
+  color: #27374d;
+}
+
+.error button {
+  cursor: pointer;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9db2bf;
+  color: #27374d;
+  font-weight: 500;
+}

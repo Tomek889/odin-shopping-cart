@@ -12,7 +12,7 @@ export default function Home() {
           Browse our items, add your favorites to the cart, and enjoy a smooth,
           simple shopping experience.
         </p>
-        <Link to="items">
+        <Link to="/items">
           <button>Go Shopping! 🛒</button>
         </Link>
       </div>
