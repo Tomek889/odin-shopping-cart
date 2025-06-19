@@ -1,0 +1,33 @@
+.homeWrapper {
+  min-height: calc(100vh - 84px - 98.4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.home {
+  text-align: center;
+  max-width: 840px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #27374d;
+}
+
+.home p {
+  margin-bottom: 1rem;
+  color: #27374d;
+}
+
+.home button {
+  cursor: pointer;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9db2bf;
+  color: #27374d;
+  font-weight: 500;
+}
