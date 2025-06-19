@@ -1,0 +1,69 @@
+.itemsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 80px;
+}
+
+.item {
+  width: 280px;
+  height: 700px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #9db2bf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.image img {
+  transform: scale(0.9);
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.item h3,
+.item p {
+  text-align: center;
+}
+
+.item h3 {
+  margin: 10px 0px;
+}
+
+.item p {
+  font-size: 1.2rem;
+}
+
+.item button {
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #526d82;
+  color: #27374d;
+  font-weight: 500;
+}
+
+.item .add {
+  margin-top: 8px;
+  padding: 8px 32px;
+}
+
+.numberInput {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0px;
+}

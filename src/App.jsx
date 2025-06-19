@@ -13,6 +13,14 @@ function App() {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
+  function getNumberOfItems() {
+    let num = 0;
+    cart.forEach((item) => {
+      num += item.number;
+    });
+    return num;
+  }
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -43,7 +51,7 @@ function App() {
 
   return (
     <>
-      <Navbar number={cart.length} />
+      <Navbar number={getNumberOfItems()} />
       <main>
         {isHome ? (
           <Outlet />
